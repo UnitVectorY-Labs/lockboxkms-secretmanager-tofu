@@ -18,8 +18,8 @@ variable "key_name" {
   type        = string
 }
 
-variable "secret_name" {
-  description = "The name of the secret in Secret Manager to store the secret."
+variable "secret_id" {
+  description = "The id of the secret in Secret Manager to store the secret."
   type        = string
 }
 

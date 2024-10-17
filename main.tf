@@ -25,7 +25,7 @@ data "google_kms_secret" "decrypted_value" {
 # Create the secret in Secret Manager
 
 resource "google_secret_manager_secret" "secret" {
-  secret_id = var.secret_name
+  secret_id = var.secret_id
   project   = var.project_id
   replication {
     auto {}
